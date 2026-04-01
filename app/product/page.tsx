@@ -16,7 +16,7 @@ const products = [
 
 ];
 
-export default function Home() {
+export default function page() {
   return (
     <div className="font-sans bg-green-50 text-gray-900">
       
