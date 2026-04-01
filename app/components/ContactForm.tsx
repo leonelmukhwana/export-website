@@ -17,7 +17,7 @@ export default function Contact(): JSX.Element {
           <div className="mt-6 space-y-2 text-gray-700">
             <p>📍 Muranga, Kenya</p>
             <p>📞 +254 700 000000</p>
-            <p>✉️ info@wendofresh.com</p>
+            <p>✉️ info@wendofresh.co.ke</p>
           </div>
         </div>
 
