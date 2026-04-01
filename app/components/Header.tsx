@@ -39,7 +39,7 @@ export default function Header(): JSX.Element {
       <div className="container flex items-center justify-between py-4">
         {/* LOGO */}
         <h1 className="text-2xl font-bold text-green-600">
-           Exporters
+           Wendofresh Exporters
         </h1>
 
         {/* DESKTOP LINKS */}
