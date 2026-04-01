@@ -3,10 +3,18 @@
 import Link from "next/link";
 import { FaPhoneAlt, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import quotes from "./quotes"; // Import the quotes from the quotes.js file
 import { JSX } from "react/jsx-runtime";
 
 export default function Header(): JSX.Element {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [quoteVisible, setQuoteVisible] = useState(false);
+
+  // Generate a random quote from the quotes array
+  const generateQuote = () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];
+  };
 
   return (
     <header className="bg-white shadow-sm relative z-50">
@@ -42,7 +50,10 @@ export default function Header(): JSX.Element {
         </nav>
 
         {/* GET QUOTE BUTTON */}
-        <button className="hidden md:block bg-green-600 text-white px-5 py-2 rounded-full shadow-md hover:bg-green-700 transition">
+        <button
+          onClick={() => setQuoteVisible(true)}
+          className="hidden md:block bg-green-600 text-white px-5 py-2 rounded-full shadow-md hover:bg-green-700 transition"
+        >
           Get Quote
         </button>
 
@@ -80,12 +91,30 @@ export default function Header(): JSX.Element {
               </Link>
             </li>
             <li>
-              <button className="w-full bg-green-600 text-white py-2 rounded-full shadow-md hover:bg-green-700 transition">
+              <button
+                onClick={() => setQuoteVisible(true)}
+                className="w-full bg-green-600 text-white py-2 rounded-full shadow-md hover:bg-green-700 transition"
+              >
                 Get Quote
               </button>
             </li>
           </ul>
         </nav>
+      )}
+
+      {/* Floating Quote Box */}
+      {quoteVisible && (
+        <div className="fixed top-10 left-1/2 transform -translate-x-1/2 bg-white shadow-xl rounded-lg p-4 w-80 z-50">
+          <div className="flex justify-between items-center">
+            <p className="text-xl font-bold text-green-600">{generateQuote()}</p>
+            <button
+              onClick={() => setQuoteVisible(false)}
+              className="text-lg text-gray-600 hover:text-green-600"
+            >
+              <FaTimes />
+            </button>
+          </div>
+        </div>
       )}
     </header>
   );
