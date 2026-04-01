@@ -27,7 +27,7 @@ export default function Header(): JSX.Element {
               <FaPhoneAlt /> +254791 903 507
             </span>
             <span className="flex items-center gap-2">
-              <FaEnvelope /> info@wendofresh.com
+              <FaEnvelope /> info@wendofresh.co.ke
             </span>
           </div>
 
@@ -39,7 +39,7 @@ export default function Header(): JSX.Element {
       <div className="container flex items-center justify-between py-4">
         {/* LOGO */}
         <h1 className="text-2xl font-bold text-green-600">
-          Wendofresh
+           Exporters
         </h1>
 
         {/* DESKTOP LINKS */}
