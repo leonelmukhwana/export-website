@@ -43,7 +43,7 @@ export default function About(): JSX.Element {
           className="relative w-full md:w-1/2 h-96 rounded-3xl overflow-hidden shadow-2xl"
         >
           <Image
-            src="/images/about-hero.png"
+            src="/images/slide6.jpeg"
             alt="Organic Products"
             fill
             className="object-cover"
