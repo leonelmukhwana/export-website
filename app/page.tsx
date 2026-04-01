@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Partner from "./components/Partner";
 import Hero from "./components/Hero"; // Import Hero
+import ChatBot from "./components/ChatBox";
 
 const products = [
   { id: 1, name: "Fresh Mangoes", description: "Organic handpicked mangoes ready for export.", image: "/images/slide5.jpeg" },
@@ -127,6 +128,8 @@ export default function Home() {
             </button>
           </motion.form>
         </div>
+          {/* Floating ChatBot */}
+      <ChatBot />
       </section>
 
      
