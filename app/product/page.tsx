@@ -1,9 +1,10 @@
-import Products from "../components/ProductCard"
+import Product from "../components/Product"
+import Products from "../components/Product"
 
 
 const page = () => {
   return (
-    <div><Products/></div>
+    <div><Product/></div>
   )
 }
 
