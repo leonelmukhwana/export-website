@@ -14,10 +14,10 @@ const products = [
   { id: 2, name: "Juicy Avocado", description: "Sweet, jAvocado for global markets.", image: "/images/slide6.jpeg" },
   { id: 3, name: "Organic Avocadoes", description: "Naturally grown avocadoes, chemical-free.", image: "/images/slide7.jpeg" },
   { id: 4, name: "Premium Mangoes", description: "Ripe mangoes for international export.", image: "/images/slide8.jpeg" },
-  { id: 1, name: "Fresh Mangoes", tagline: "Ripe & Juicy", image: "/images/slide8.jpeg" },
-  { id: 2, name: "Juicy Avocado", tagline: "Creamy & Healthy", image: "/images/slide9.jpeg" },
-  { id: 3, name: "Organic Avocadoes", tagline: "Naturally Grown", image: "/images/slide10.jpeg" },
-  { id: 4, name: "Premium Mangoes", tagline: "Export Quality", image: "/images/slide11.jpeg" },
+  { id: 1, name: "Fresh Mangoes", description: "Ripe & Juicy", image: "/images/slide8.jpeg" },
+  { id: 2, name: "Premium Mangoes", description: "Export Quality", image: "/images/slide9.jpeg" },
+  { id: 3, name: "Organic and Creamy Avocadoes", tagline: "Naturally Grown", image: "/images/slide10.jpeg" },
+  { id: 4, name: "Buttery Avocadoes", dscription: "CReamy in Nature", image: "/images/slide11.jpeg" },
 
 ];
 
