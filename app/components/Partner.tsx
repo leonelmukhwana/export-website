@@ -7,30 +7,21 @@ import { JSX } from "react/jsx-runtime";
 export default function Partners(): JSX.Element {
   const partners = [
     {
-      name: "FreshKenya Ltd",
+      name: "FResh Produce Consortium(FPC)",
       country: "Kenya",
-      logo: "/images/partner1.png",
+      logo: "/images/fpc.jpg",
     },
     {
-      name: "GlobalFruits Inc",
-      country: "USA",
-      logo: "/images/partner2.png",
-    },
-    {
-      name: "Organic World",
-      country: "Germany",
-      logo: "/images/partner3.png",
-    },
-    {
-      name: "Tropical Exports",
-      country: "Netherlands",
-      logo: "/images/partner4.png",
-    },
-    {
-      name: "GreenHarvest Ltd",
+      name: "Horticultural Crops Directorate (HCD)",
       country: "Kenya",
-      logo: "/images/partner5.png",
+      logo: "/images/afa.png",
     },
+    {
+      name: "Kenya Plant Health Inspectorate Service(KEPHIS)",
+      country: "Kenya",
+      logo: "/images/kephis.webp",
+    },
+   
   ];
 
   return (
