@@ -24,7 +24,7 @@ export default function Footer(): JSX.Element {
           <ul className="space-y-2 text-gray-300">
             <li><a href="/" className="hover:text-green-400">Home</a></li>
             <li><a href="/about" className="hover:text-green-400">About</a></li>
-            <li><a href="/products" className="hover:text-green-400">Products</a></li>
+            <li><a href="/product" className="hover:text-green-400">Products</a></li>
             <li><a href="/contact" className="hover:text-green-400">Contact</a></li>
           </ul>
         </div>

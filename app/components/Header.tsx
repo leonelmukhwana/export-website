@@ -37,7 +37,7 @@ export default function Header(): JSX.Element {
         <nav className="hidden md:flex gap-8 text-gray-700 font-medium">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/products">Products</Link>
+          <Link href="/product">Products</Link>
           <Link href="/contact">Contact</Link>
         </nav>
 
@@ -70,7 +70,7 @@ export default function Header(): JSX.Element {
               </Link>
             </li>
             <li>
-              <Link href="/products" onClick={() => setMenuOpen(false)}>
+              <Link href="/product" onClick={() => setMenuOpen(false)}>
                 Products
               </Link>
             </li>
