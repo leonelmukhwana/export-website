@@ -1,25 +1,24 @@
-// pages/api/chat.ts
 import { NextApiRequest, NextApiResponse } from "next";
 import { OpenAI } from "openai";
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY, // Add your OpenAI API key in .env.local
+  apiKey: process.env.OPENAI_API_KEY, // Ensure this is set in .env.local
 });
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const { message } = JSON.parse(req.body);
+  const { message } = JSON.parse(req.body); // Read user message from the body
 
   try {
-    // Get the response from GPT-4 using OpenAI API
+    // Sending the user message to the OpenAI API for chat completion
     const completion = await openai.chat.completions.create({
-      model: "gpt-4",
+      model: "gpt-4", // or "gpt-3.5-turbo"
       messages: [{ role: "user", content: message }],
     });
 
-    // Send the response back to the frontend
+    // Return the bot's response
     res.status(200).json({ reply: completion.choices[0].message.content });
   } catch (error) {
-    console.error("Error with OpenAI API:", error);
+    console.error("Error fetching from OpenAI:", error);
     res.status(500).json({ error: "Failed to get response from OpenAI" });
   }
 }

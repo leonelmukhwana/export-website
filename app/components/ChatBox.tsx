@@ -10,7 +10,7 @@ export default function ChatBot() {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSend = async () => {
-    if (!input.trim()) return;
+    if (!input.trim()) return; // Don't send empty messages
 
     // Add user message
     setMessages([...messages, { sender: "user", text: input }]);
@@ -18,7 +18,7 @@ export default function ChatBot() {
     setIsLoading(true);
 
     try {
-      // Send the user message to the API route
+      // Send the user message to the backend API route
       const response = await fetch("/api/chat", {
         method: "POST",
         body: JSON.stringify({ message: input }),
@@ -28,7 +28,7 @@ export default function ChatBot() {
       // Add bot's response
       setMessages((prev) => [...prev, { sender: "bot", text: data.reply }]);
     } catch (error) {
-      setMessages((prev) => [...prev, { sender: "bot", text: "Sorry, I'm having trouble right now." }]);
+      setMessages((prev) => [...prev, { sender: "bot", text: "Sorry, I am having trouble right now." }]);
       console.error("Error fetching from OpenAI:", error);
     }
     setIsLoading(false);
