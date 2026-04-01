@@ -1,4 +1,6 @@
 import { JSX } from "react/jsx-runtime";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+
 
 export default function Contact(): JSX.Element {
   return (
@@ -14,12 +16,22 @@ export default function Contact(): JSX.Element {
             Contact us for fresh organic agricultural exports worldwide.
           </p>
 
-          <div className="mt-6 space-y-2 text-gray-700">
-            <p>📍 Muranga, Kenya</p>
-            <p>📞 +254 700 000000</p>
-            <p>✉️ info@wendofresh.co.ke</p>
-          </div>
-        </div>
+                    <div className="mt-6 space-y-3 text-gray-700">
+            <p className="flex items-center gap-2">
+                <FaMapMarkerAlt className="text-green-600" />
+                Muranga, Kenya
+            </p>
+
+            <p className="flex items-center gap-2">
+                <FaPhoneAlt className="text-green-600" />
+                +254 700 000000
+            </p>
+
+            <p className="flex items-center gap-2">
+                <FaEnvelope className="text-green-600" />
+                info@wendofresh.co.ke
+            </p>
+            </div>
 
         {/* FORM */}
         <form className="bg-white p-6 rounded-2xl shadow-lg space-y-4">
