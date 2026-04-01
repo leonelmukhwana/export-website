@@ -19,10 +19,10 @@ export default function Home() {
   return (
     <div className="font-sans bg-green-50 text-gray-900">
       
-      <Header />
+  
 
       {/* HERO SECTION */}
-      <Hero /> 
+    
 
       {/* SPACING BETWEEN HERO AND FEATURES */}
       <div className="h-32 md:h-40"></div> {/* ↑ adds premium spacing */}
@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
+     
 
     </div>
   );
