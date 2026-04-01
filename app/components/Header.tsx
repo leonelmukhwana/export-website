@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { FaPhoneAlt, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
-import quotes from "./quotes"; // Import the quotes from the quotes.js file
+//import quotes from "./quotes"; // Import the quotes from the quotes.js file
 import { JSX } from "react/jsx-runtime";
+import quotes from "./Quotes";
 
 export default function Header(): JSX.Element {
   const [menuOpen, setMenuOpen] = useState(false);

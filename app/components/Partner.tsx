@@ -39,7 +39,7 @@ export default function Partners(): JSX.Element {
         </motion.h2>
 
         {/* PARTNER CARDS */}
-        <div className="grid md:grid-cols-5 gap-8 items-center justify-center">
+        <div className="grid md:grid-cols-3 gap-8 items-center justify-center">
           {partners.map((partner, i) => (
             <motion.div
               key={i}

@@ -1,4 +1,4 @@
-const quotes = [
+const quotes: string[]  = [
   "Get the best organic produce from Wendofresh – the taste of nature!",
   "Fresh, organic, and natural products delivered worldwide.",
   "Experience the difference with Wendofresh’s premium agricultural exports.",
