@@ -50,38 +50,39 @@ const slides: Slide[] = [
 
 export default function Hero(): JSX.Element {
   return (
-    <section className="relative h-[700px] md:h-[750px]">
-      <Swiper
-        modules={[Autoplay, EffectFade, Pagination]}
-        autoplay={{ delay: 3500, disableOnInteraction: false }}
-        loop
-        effect="fade"
-        pagination={{ clickable: true }}
-      >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <div className="relative w-full h-full">
-              
-              {/* BACKGROUND IMAGE */}
-              <Image
-                src="/images/slide6.jpeg"  {/* Set your background image here */}
-                alt={slide.title}
-                fill
-                className="object-cover brightness-75"
-              />
+    <section className="bg-gradient-to-r from-green-300 to-green-500 pt-20 pb-32">
+      <div className="container">
+        <Swiper
+          modules={[Autoplay, EffectFade, Pagination]}
+          autoplay={{ delay: 3500, disableOnInteraction: false }}
+          loop
+          effect="fade"
+          pagination={{ clickable: true }}
+        >
+          {slides.map((slide) => (
+            <SwiperSlide key={slide.id}>
+              <div className="flex flex-col md:flex-row items-center justify-between bg-white/30 backdrop-blur-lg rounded-3xl p-10 shadow-xl">
+                
+                {/* TEXT */}
+                <div className="max-w-lg">
+                  <p className="text-sm text-gray-800 mb-2">
+                    {slide.tag}
+                  </p>
 
-              {/* CARD ON TOP */}
-              <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-between container mx-auto p-10">
-                <div className="max-w-lg bg-white/30 backdrop-blur-lg rounded-3xl p-8 shadow-xl">
-                  <p className="text-sm text-gray-800 mb-2">{slide.tag}</p>
-                  <h1 className="text-5xl font-bold text-gray-900">{slide.title}</h1>
-                  <h2 className="text-3xl font-semibold text-green-900 mb-6">{slide.subtitle}</h2>
+                  <h1 className="text-5xl font-bold text-gray-900">
+                    {slide.title}
+                  </h1>
+
+                  <h2 className="text-3xl font-semibold text-green-900 mb-6">
+                    {slide.subtitle}
+                  </h2>
+
                   <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-green-700 transition">
                     Explore
                   </button>
                 </div>
 
-                {/* IMAGE CARD */}
+                {/* IMAGE */}
                 <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] mt-10 md:mt-0">
                   <Image
                     src={slide.image}
@@ -92,10 +93,10 @@ export default function Hero(): JSX.Element {
                   />
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 }
