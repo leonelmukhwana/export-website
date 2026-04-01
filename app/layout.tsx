@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Export Company",
+  title: "Wendofresh Export Limited",
   description: "We export quality products worldwide",
 };
 
