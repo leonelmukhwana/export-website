@@ -50,7 +50,10 @@ const slides: Slide[] = [
 
 export default function Hero(): JSX.Element {
   return (
-    <section className="bg-gradient-to-r from-green-300 to-green-500 pt-20 pb-32">
+    <section  className="relative pt-20 pb-32 bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/slide6.jpeg')", // Set background image
+      }}>
       <div className="container">
         <Swiper
           modules={[Autoplay, EffectFade, Pagination]}
