@@ -9,6 +9,7 @@ import Partner from "./components/Partner";
 import Hero from "./components/Hero"; // Import Hero
 import ChatBot from "./components/ChatBox";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import VoiceAssistant from "./components/VoiceAssitant";
 
 const products = [
   { id: 1, name: "Fresh Mangoes", description: "Organic handpicked mangoes ready for export.", image: "/images/slide5.jpeg" },
@@ -160,6 +161,7 @@ export default function Home() {
         </div>
           {/* Floating ChatBot */}
       <ChatBot />
+       <VoiceAssistant />
       </section>
 
      
