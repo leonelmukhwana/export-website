@@ -11,13 +11,13 @@ export default function Products(): JSX.Element {
     },
     {
       id: 2,
-      name: "Juicy Oranges",
+      name: "Juicy Mangoes",
       description: "Handpicked juicy oranges, perfect for export worldwide.",
       image: "/images/slide10.jpeg",
     },
     {
       id: 3,
-      name: "Organic Bananas",
+      name: "Organic Avocado",
       description: "Grown without chemicals, ideal for global markets.",
       image: "/images/slide8.jpeg",
     },

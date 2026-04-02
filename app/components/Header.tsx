@@ -27,7 +27,7 @@ export default function Header(): JSX.Element {
               <FaPhoneAlt /> +254791 903 507
             </span>
             <span className="flex items-center gap-2">
-              <FaEnvelope /> info@wendofresh.co.ke
+              <FaEnvelope /> jm7260891@gmail.com
             </span>
           </div>
 

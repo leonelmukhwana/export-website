@@ -23,12 +23,12 @@ export default function Contact(): JSX.Element {
 
             <p className="flex items-center gap-2">
               <FaPhoneAlt className="text-green-600" />
-              +254 700 000000
+              +254791 903 507
             </p>
 
             <p className="flex items-center gap-2">
               <FaEnvelope className="text-green-600" />
-              info@wendofresh.co.ke
+              jm7260891@gmail.com
             </p>
           </div>
         </div>
