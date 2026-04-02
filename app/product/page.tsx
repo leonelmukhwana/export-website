@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Products from "../components/Product";
 // Import Hero
 
 const products = [
   { id: 1, name: "Fresh Mangoes", description: "Organic handpicked mangoes ready for export.", image: "/images/slide5.jpeg" },
-  { id: 2, name: "Juicy Avocado", description: "Sweet, jAvocado for global markets.", image: "/images/slide6.jpeg" },
+  { id: 2, name: "Mild Avocado", description: "Sweet, Avocado for global markets.", image: "/images/slide6.jpeg" },
   { id: 3, name: "Organic Avocadoes", description: "Naturally grown avocadoes, chemical-free.", image: "/images/slide7.jpeg" },
   { id: 4, name: "Premium Mangoes", description: "Ripe mangoes for international export.", image: "/images/slide8.jpeg" },
   { id: 1, name: "Fresh Mangoes", tagline: "Ripe & Juicy", image: "/images/slide8.jpeg" },
@@ -49,39 +50,7 @@ export default function page() {
         ))}
       </section>
 
-      {/* PRODUCTS SECTION */}
-      <section className="py-20 container mx-auto px-4 md:px-0">
-        <h2 className="text-center text-4xl font-extrabold text-green-700 mb-12">
-          Our Export Products
-        </h2>
-
-        <div className="grid md:grid-cols-4 gap-8">
-          {products.map((product, i) => (
-            <motion.div
-              key={product.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.2 }}
-              className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow cursor-pointer"
-            >
-              <div className="relative h-48">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-contain p-4"
-                />
-              </div>
-              <div className="p-4 space-y-2">
-                <h3 className="text-xl font-bold text-gray-800">{product.name}</h3>
-                <p className="text-gray-600 text-sm">{product.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
+      <Products/>
     
      
 
