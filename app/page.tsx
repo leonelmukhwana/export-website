@@ -12,7 +12,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const products = [
   { id: 1, name: "Fresh Mangoes", description: "Organic handpicked mangoes ready for export.", image: "/images/slide5.jpeg" },
-  { id: 2, name: "Juicy Avocado", description: "Sweet, Avocado for global markets.", image: "/images/slide6.jpeg" },
+  { id: 2, name: "Mild Avocado", description: "Sweet, Avocado for global markets.", image: "/images/slide6.jpeg" },
   { id: 3, name: "Organic Avocadoes", description: "Naturally grown avocadoes, chemical-free.", image: "/images/slide7.jpeg" },
   { id: 4, name: "Premium Mangoes", description: "Ripe mangoes for international export.", image: "/images/slide8.jpeg" },
   { id: 1, name: "Fresh Mangoes", description: "Ripe & Juicy", image: "/images/slide8.jpeg" },
