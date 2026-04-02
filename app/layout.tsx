@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsappButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Header />
         <Hero />
         <main className="flex-grow">{children}</main>
+         <WhatsAppButton />
         <Footer />
       </body>
     </html>
